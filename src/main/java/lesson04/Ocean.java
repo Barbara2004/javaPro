@@ -6,6 +6,16 @@ public class Ocean {
     private String habitat;
     private int age;
 
+    public Ocean(String name, double weight, String habitat, int age) {
+        this.name = name;
+        this.weight = weight;
+        this.habitat = habitat;
+        this.age = age;
+    }
+
+    public Ocean() {
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -61,5 +71,15 @@ public class Ocean {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Ocean{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", habitat='" + habitat + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
