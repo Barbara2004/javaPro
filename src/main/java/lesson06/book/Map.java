@@ -11,10 +11,10 @@ public class Map {
     public static HashMap<String, Set<String>> bookMap = new HashMap<>();
 
     public static HashMap<String, Set<String>> getBookMap() {
-        bookMap.put("Charlotte Bronte", Library.booksByCharlotteBronte);
-        bookMap.put("Daniel Defoe", Library.booksByDanielDefoe);
-        bookMap.put("Louisa May Alcott", Library.booksByLouisaMayAlcott);
-        bookMap.put("Oscar Wilde", Library.booksByOscarWilde);
+        bookMap.put("Charlotte Bronte", Library.getBooksByCharlotteBronte());
+        bookMap.put("Daniel Defoe", Library.getBooksByDanielDefoe());
+        bookMap.put("Louisa May Alcott", Library.getBooksByLouisaMayAlcott());
+        bookMap.put("Oscar Wilde", Library.getBooksByOscarWilde());
         return bookMap;
     }
 
